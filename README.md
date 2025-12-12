@@ -23,7 +23,7 @@ DAX is specifically designed to compute business formulas over a data model
 * The columns used to create the relationship, which usually have the same name in both tables **keys of the relationship**
 
 | one-side      | many side     |
-| ------------- |:-------------:|
+| ------------- |-------------|
 | column needs to have a unique value for each row      | the same value can be repeated in many different rows     |
 | cannot contain blanks      |      |
 
@@ -31,11 +31,14 @@ DAX is specifically designed to compute business formulas over a data model
 * **Relationships can form a chain:** product ---> subcategory ---> category => each product has a category
 * In each relationship, one or two small arrows can determine the cross filter direction. The **arrow** indicates the **direction** of the automatic filtering of the relationship `cross filter`
 
-![This is an alt text.](https://media.licdn.com/dms/image/v2/D5612AQH4_2A0rtywmQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695674935544?e=1767225600&v=beta&t=kOZfYdYB7gESn4QJpm9EZ2bO002DjaEDvX97QZ6WBUI)
+<figure>
+  <img src="Images\1_1.png" alt="Mô tả ảnh">
+  <figcaption> Figure 1-1 This data model is made up of six tables.</figcaption>
+</figure>
 
-e.g. relationship between `Sales` and `Sale Orders`: 2 arrows; all others relationship: 1 arrow
+e.g. relationship between `Sales` and `Product`: 2 arrows; all others relationship: 1 arrow
 
 ### Understanding the direction of a relationship
-* `Unidirectional cross filter` 
-* `Bidirectional cross filter`
+* `Unidirectional cross filter`
+* `Bidirectional cross filter`: 2 arrows
 
