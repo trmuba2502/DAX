@@ -5,6 +5,8 @@ This is my note while discovering DAX language
 * D: Data 
 * A: Analysis 
 * X: eXpressions
+ 
+## Understanding the data model
 
 DAX is specifically designed to compute business formulas over a data model
 
@@ -14,7 +16,7 @@ DAX is specifically designed to compute business formulas over a data model
 #### Tables
 * Set of rows containing data, each row divided into columns, each column has a data type and contains a single piece of information
 
-## Aspects of relaionships
+#### Aspects of relaionships
 * Two tables in a relationship do not have the same role
 * One-side: 1-1 relationships
 * Many-side: weak relationships
@@ -27,6 +29,13 @@ DAX is specifically designed to compute business formulas over a data model
 
 * **key for the table:**  a column has a unique value for each row
 * **Relationships can form a chain:** product ---> subcategory ---> category => each product has a category
-* In each relationship, one or two small arrows can determine the cross filter direction
+* In each relationship, one or two small arrows can determine the cross filter direction. The **arrow** indicates the **direction** of the automatic filtering of the relationship `cross filter`
 
-![This is an alt text.](/image/sample.webp "This is a sample image.")
+![This is an alt text.](https://media.licdn.com/dms/image/v2/D5612AQH4_2A0rtywmQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695674935544?e=1767225600&v=beta&t=kOZfYdYB7gESn4QJpm9EZ2bO002DjaEDvX97QZ6WBUI)
+
+e.g. relationship between `Sales` and `Sale Orders`: 2 arrows; all others relationship: 1 arrow
+
+### Understanding the direction of a relationship
+* `Unidirectional cross filter` 
+* `Bidirectional cross filter`
+
